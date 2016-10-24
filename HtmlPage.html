@@ -1,8 +1,9 @@
 ﻿<!DOCTYPE html>
 <html lang="no">
 <head>
-    <title>oh yeah</title>
-    <meta charset="utf-8" />
+    <title>Gruppe 9</title>
+    <link rel="SHORTCUT ICON" href="smile.png">
+    <meta charset="utf-8" />    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <!-- Stylesheet -->
@@ -14,7 +15,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 
     <!-- Smooth scrooling jQuery code -->
-    <script src="JjjjjjQuery.js"></script>
+    <script src="JQuery.js"></script>
 
     <!-- Javascript -->
     <script src="JavaScript.js"></script>
@@ -45,13 +46,13 @@
                         <a href="#">Gruppen</a>
                         <nav>
                             <ul style="background-color: #808080;">
-                                <li><a href="/Kristoffer.html">Kristoffer</a></li>
-                                <li><a href="/Jacob.html">Jacob</a></li>
-                                <li><a href="/Peder.html">Peder</a></li>
+                                <li><a href="Kristoffer.html">Kristoffer</a></li>
+                                <li><a href="Jacob.html">Jacob</a></li>
+                                <li><a href="Peder.html">Peder</a></li>
                             </ul>
                         </nav>
                     </li>
-                    <li><a href="/Prosjekt.html">Prosjekt</a></li>
+                    <li><a href="Prosjekt.html">Prosjekt</a></li>
                     <li><a href="#kontakt">Kontakt</a></li>
                 </ul>
             </nav>
@@ -82,12 +83,12 @@
                     <br />
 
                     <!-- Å bruke knapp overstyrer javascriptet for smooth scrolling, kan ikke bruke vanlig "hyperlink" den funker ikke -->
-                    <button class="HoverImg" id="resturant1" onclick="location.href='#openModal'"></button>
-                    <button class="HoverImg" id="resturant2" onclick="location.href='#openModal'"></button>
-                    <button class="HoverImg" id="resturant3" onclick="location.href='#openModal'"></button>
+                    <button class="HoverImg" id="resturant1" onclick="location.href='#openModal1'"></button>
+                    <button class="HoverImg" id="resturant2" onclick="location.href='#openModal2'"></button>
+                    <button class="HoverImg" id="resturant3" onclick="location.href='#openModal3'"></button>
 
 
-                    <div id="openModal" class="modalDialog">
+                    <div id="openModal1" class="modalDialog">
                         <div class="wrapper h_iframe">
                             <a href="#close" title="Close" class="modalclose"></a>
                             <img class="ratio" alt="Hvit bakgrunn" src="http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg" /> <!-- Link til hvit bakgrunn, må laste ned seinere -->
@@ -99,6 +100,22 @@
                             -->
                             <!-- Scrolling atributt er utgått i HTML5, men "iframe { overflow:hidden; }" fungerer ikke i firefox og IE -->
                             <iframe src="http://home.hib.no/studenter/h181192/resturant/index.html" name="targetframe" scrolling="yes" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div id="openModal2" class="modalDialog">
+                        <div class="wrapper h_iframe">
+                            <a href="#close" title="Close" class="modalclose"></a>
+                            <img class="ratio" alt="Hvit bakgrunn" src="http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg" /> <!-- Link til hvit bakgrunn, må laste ned seinere -->
+                      
+                            <iframe src="http://home.hib.no/studenter/h181192/restaurant1/HtmlPage.html" name="targetframe" scrolling="yes" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div id="openModal3" class="modalDialog">
+                        <div class="wrapper h_iframe">
+                            <a href="#close" title="Close" class="modalclose"></a>
+                            <img class="ratio" alt="Hvit bakgrunn" src="http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg" /> <!-- Link til hvit bakgrunn, må laste ned seinere -->
+                        
+                            <iframe src="http://home.hib.no/studenter/h181192/bedrift/HtmlPage.html" name="targetframe" scrolling="yes" allowfullscreen></iframe>
                         </div>
                     </div>
                 </section>
