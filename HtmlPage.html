@@ -2,7 +2,7 @@
 <html lang="no">
 <head>
     <title>Gruppe 9</title>
-    <link rel="SHORTCUT ICON" href="smile.png">
+    <link rel="SHORTCUT ICON" href="images/smile.png">
     <meta charset="utf-8" />    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -41,17 +41,17 @@
             <nav>
                 <ul>
                     <li><a href="#hovedside">Om oss</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
                     <li>
-                        <a href="#">Gruppen</a>
+                        <a href="#">Gruppe <span class="toggle">Expand</span><span class="caret"></span></a>
                         <nav>
                             <ul style="background-color: #808080;">
-                                <li><a href="Kristoffer.html">Kristoffer</a></li>
-                                <li><a href="Jacob.html">Jacob</a></li>
-                                <li><a href="Peder.html">Peder</a></li>
+                                <li><a href="kristoffer.html">Kristoffer</a></li>
+                                <li><a href="jacob.html">Jacob</a></li>
+                                <li><a href="peder.html">Peder</a></li>
                             </ul>
                         </nav>
                     </li>
+                    <li><a href="#portfolio">Portfolio</a></li>                    
                     <li><a href="Prosjekt.html">Prosjekt</a></li>
                     <li><a href="#kontakt">Kontakt</a></li>
                 </ul>
@@ -86,6 +86,7 @@
                     <button class="HoverImg" id="resturant1" onclick="location.href='#openModal1'"></button>
                     <button class="HoverImg" id="resturant2" onclick="location.href='#openModal2'"></button>
                     <button class="HoverImg" id="resturant3" onclick="location.href='#openModal3'"></button>
+                    <button class="HoverImg" id="resturant4" onclick="location.href='#openModal4'"></button>
 
 
                     <div id="openModal1" class="modalDialog">
@@ -107,7 +108,7 @@
                             <a href="#close" title="Close" class="modalclose"></a>
                             <img class="ratio" alt="Hvit bakgrunn" src="http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg" /> <!-- Link til hvit bakgrunn, må laste ned seinere -->
                       
-                            <iframe src="http://home.hib.no/studenter/h181192/restaurant1/HtmlPage.html" name="targetframe" scrolling="yes" allowfullscreen></iframe>
+                            <iframe src="http://home.hib.no/studenter/h181192/restaurantv1/HtmlPage.html" name="targetframe" scrolling="yes" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div id="openModal3" class="modalDialog">
@@ -118,6 +119,15 @@
                             <iframe src="http://home.hib.no/studenter/h181192/bedrift/HtmlPage.html" name="targetframe" scrolling="yes" allowfullscreen></iframe>
                         </div>
                     </div>
+                    <div id="openModal4" class="modalDialog">
+                        <div class="wrapper h_iframe">
+                            <a href="#close" title="Close" class="modalclose"></a>
+                            <img class="ratio" alt="Hvit bakgrunn" src="http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg" /> <!-- Link til hvit bakgrunn, må laste ned seinere -->
+
+                            <iframe src="http://home.hib.no/studenter/h181192/gruppe9/main.html" name="targetframe" scrolling="yes" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
                 </section>
                 <!-- Modal slutt -->
             </section>
@@ -129,13 +139,13 @@
                     <a id="kontakt"><h2 id="four" class="">KONTAKT OSS</h2></a>
                     <div id="googleMap" class="rightcol"></div>
                     <div class="icons">
-                        <img src="City-Gps.png" alt="logo">
+                        <img src="images/City-Gps.png" alt="logo">
                         <h3 class="skrift">Bergen, Norge</h3>
 
-                        <img src="phone.png" alt="logo" />
+                        <img src="images/phone.png" alt="logo" />
                         <h3 class="skrift">+47 815 00 657</h3>
 
-                        <img src="Gmail.png" alt="logo" />
+                        <img src="images/Gmail.png" alt="logo" />
                         <h3 class="skrift">gruppe9@gmail.com</h3>
                     </div>
                     <p class="info">
