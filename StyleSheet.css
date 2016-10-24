@@ -1,0 +1,540 @@
+﻿
+/* Fra her til @media taggen er til mobilvisning. Alt som ligger her blir også med til desktop visning
+    skal det gjøres endringer som skal se anderledes ut på desktop visning må da disse endringene
+    skrives over i css koden som ligger inni @media{desktop} taggen
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: #444;
+    -webkit-font-smoothing: antialiased;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    font-weight: 400;
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+    text-rendering: optimizeLegibility;
+    background: url(Tekno.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover; /* Mozilla*/
+    -o-background-size: cover; /* Opera*/
+    background-size: cover;
+}
+
+iframe {
+    background-color: transparent;
+    border: none;
+}
+
+#page {
+    margin: 0px auto 0px auto;
+    overflow: auto;
+}
+
+header {
+    /* background-color: white; */ /* Mobil meny linje */
+    background-color: black;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    position: fixed; /* må være fixed for å kunne bruke auto-hide */
+    top: 0;
+    -webkit-transition: top 0.2s ease-in-out;
+    -o-transition: top 0.2s ease-in-out;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 10;
+}
+
+    header > div#logo {
+        line-height: 50px;
+        position: relative;
+    }
+
+    header > .menuDown {
+        box-shadow: 0 3px 5px rgba(0,0,0,.15);
+    }
+
+    header > .menuUp {
+        box-shadow: none;
+    }
+
+    header > div#logo > h1 {
+        color: white;
+        font-weight: 300;
+        text-transform: lowercase;
+    }
+
+    header > div#logo > div#navToggle { /* Meny knapp */
+        /* background-color: rgba(0,0,0,.15); */
+        background-color: black;
+        position: absolute;
+        right: 0;
+        top: 0;
+        -webkit-transition: 300ms all ease;
+        -o-transition: 300ms all ease;
+        transition: 300ms all ease;
+    }
+
+        header > div#logo > div#navToggle:hover { /* Meny knapp hover */
+            /* background-color: rgba(0,0,0,.1); */
+            background-color: #444;
+        }
+
+        header > div#logo > div#navToggle > a {
+            color: rgba(255,255,255,.85); /* Meny knapp skrift farge */
+            display: block;
+            font-size: 0.85em;
+            font-weight: 600;
+            padding: 0 40px;
+            padding: 0 2.5rem;
+            text-decoration: none;
+            -webkit-transition: 300ms all ease;
+            -o-transition: 300ms all ease;
+            transition: 300ms all ease;
+        }
+
+        header > div#logo > div#navToggle:hover > a {
+            color: rgba(255,255,255,1); /* Meny knapp skrift farge hover */
+        }
+
+    header > nav {
+        /* background-color: white; */
+        background-color: #444;
+        display: none;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        -webkit-transition: 300ms all ease;
+        -o-transition: 300ms all ease;
+        transition: 300ms all ease;
+    }
+
+    header nav > ul {
+        list-style-type: none;
+    }
+
+        header nav > ul > li {
+            border-bottom: 1px dotted rgba(0,0,0,.1);
+            position: relative;
+        }
+
+            header nav > ul > li:last-of-type {
+                border-bottom: none;
+            }
+
+            header nav > ul > li > a {
+                display: block;
+                /*  color: rgba(0,0,0,.65); */
+                color: white;
+                font-weight: 700;
+                padding: 14.4px 0;
+                padding: 0.9rem 0;
+                text-decoration: none;
+                -webkit-transition: 250ms all ease;
+                -o-transition: 250ms all ease;
+                transition: 250ms all ease;
+            }
+
+                header nav > ul > li > a span.toggle {
+                    background-color: rgba(0,0,0,.05);
+                    border-radius: 3rem;
+                    color: rgba(0,0,0,.25);
+                    font-size: 0.75em;
+                    font-weight: 500;
+                    padding: 2px 8px;
+                    text-transform: lowercase;
+                }
+
+                header nav > ul > li > a span.caret {
+                    display: none;
+                }
+
+    header > nav > ul > li:hover > a {
+        color: rgb(140, 193, 193);
+    }
+
+    
+
+p {
+    color: #636363;
+    margin-bottom: 2em;
+}
+
+section {
+    padding-right: 10px; /* Viktig, mellomrom fra kant til skrift */
+    padding-left: 10px; /* Viktig, mellomrom fra kant til skrift */
+}
+
+    section.hide {
+        padding-right: 0px; /* Viktig, mellomrom fra kant til skrift */
+        padding-left: 0px; /* Viktig, mellomrom fra kant til skrift */
+    }
+
+    section.one {
+        background-color: white;
+        margin-top: 400px;
+        padding-bottom: 1em;
+    }
+
+    section.two {
+        background-color: white;        
+        padding-bottom: 1em;
+    }
+
+    section.three {
+        background-color: white;
+        padding-bottom: 1em;
+    }
+
+    section.four {
+        background-color: black;
+    }
+
+.space {
+    margin-top: 5em;
+    margin-bottom: 20em;
+}
+
+.space1 {
+    margin-bottom: 20em;
+}
+
+.nav-up {
+    top: -100px;
+}
+
+
+/* Mobil css koder ferdig */
+
+
+
+
+
+/*  ******************************************
+    ******************************************
+    ******************************************
+    ******************************************
+*/
+
+
+
+
+/* Medium screens / desktop screens
+    Her vil alt som skal være i desktop modus legges til, er det noe som skal endres må en huske å 
+    skrive over de css kodene fra mobil-klassen, ellers så vil alt av koder her bli lagt oppå css koden til mobil
+*/
+
+@media all and (min-width: 741px) {
+    header > div#logo > div#navToggle {
+        display: none;
+    }
+
+    #page {
+        margin: 0px auto 10px auto;
+        overflow: auto;
+    }
+
+    header {
+        background-color: black;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        line-height: 70px;
+        padding: 0 3rem;
+        position: fixed; /* Meny linje */
+        text-align: left;
+        width: 100%;
+        /* opacity: 0.8; */
+    }
+
+        header > div#logo {
+            background-color: transparent;
+            line-height: 70px;
+        }
+
+            header > div#logo > h1 {
+                color: rgb(140, 193, 193);
+            }
+
+        header > nav {
+            background-color: transparent;
+            display: block;
+        }
+
+            header > nav > ul {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-flow: row wrap;
+                -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+                -webkit-box-pack: end;
+                -webkit-justify-content: flex-end;
+                -ms-flex-pack: end;
+                justify-content: flex-end;
+            }
+
+        header nav > ul > li {
+            border-bottom: none;
+        }
+
+            header nav > ul > li > a {
+                padding: 0 1.25rem;
+            }
+
+                header nav > ul > li > a span.toggle {
+                    display: none;
+                }
+
+                header nav > ul > li > a span.caret {
+                    border-bottom: 4px solid transparent;
+                    border-top: 4px solid rgba(0,0,0,.65);
+                    border-right: 4px solid transparent;
+                    border-left: 4px solid transparent;
+                    border-radius: 1px;
+                    content: "";
+                    display: inline-block;
+                    height: 0;
+                    margin: 0 0 0 .25rem;
+                    -webkit-transition: 250ms all ease;
+                    -o-transition: 250ms all ease;
+                    transition: 250ms all ease;
+                    width: 0;
+                    vertical-align: middle;
+                }
+
+            header nav > ul > li:hover > a span.caret {
+                border-top-color: rgb(140, 193, 193);
+                -webkit-transform: rotate(270deg);
+                -o-transform: rotate(270deg);
+                transform: rotate(270deg);
+            }
+
+        header > nav > ul > li:hover > nav {
+            background-color: rgb(51,51,51);
+            border-radius: .25em;
+            box-shadow: 0 2px 8px rgba(0,0,0,.6);
+            display: block;
+            line-height: 3em;
+            right: -50%;
+            width: 196px;
+        }
+        header > nav > ul > li > nav {
+        background-color: rgb(51,51,51);
+        border-radius: 1.5em;
+        box-shadow: 0 2px 8px rgba(0,0,0,.6);
+        display: none;
+        overflow: hidden;
+        position: relative;
+        height: 40px;
+        right: 5%;
+        width: 90%;
+        z-index: 100;
+    }
+
+        header > nav > ul > li > nav > ul > li > a {
+            color: rgba(255,255,255,.85);
+            -webkit-transition: 300ms all ease;
+            -o-transition: 300ms all ease;
+            transition: 300ms all ease;
+        }
+
+        header > nav > ul > li > nav > ul > li:hover > a {
+            background-color: rgba(0,0,0,.6);
+            color: rgba(255,255,255,1);
+        }
+
+    section {
+        padding-right: 15%; /* Viktig, mellomrom fra kant til skrift */
+        padding-left: 15%; /* Viktig, mellomrom fra kant til skrift */
+    }
+
+
+    .space {
+        margin-top: 3em;
+        margin-bottom: 0em;
+    }
+
+    .space1 {
+        margin-bottom: 0em;
+    }
+
+    .space2 {
+        margin-bottom: 13em;
+    }
+
+    .space3 {
+        margin-top: 10em;
+        margin-bottom: 1em;
+    }
+
+    .nav-up {
+        top: 0px;
+    }
+
+    .opacity {
+        opacity: 0.8;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    }
+
+    #resturant { /* Hører til modal */
+        float: none;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        -ms-grid-row-align: center;
+        align-items: center;
+    }
+}
+/* Desktop koder ferdig*/
+
+
+
+
+
+/*  ******************************************
+    ******************************************
+    ******************************************
+    ******************************************
+*/
+
+
+
+
+/* Liten test på modal med nettside inni modal */
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: opacity 400ms ease-in;
+    -o-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+    .modalDialog:target {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        pointer-events: auto;
+    }
+
+    .modalDialog > div {
+        background: #ffffff;
+        background: -webkit-linear-gradient(#ffffff);
+        background: -o-linear-gradient(#ffffff);
+    }
+
+.close:hover {
+    background: #00d9ff;
+}
+
+.modalclose {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #222;
+}
+
+.wrapper {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background: #CCC;
+}
+
+.h_iframe {
+    position: relative;
+}
+
+    .h_iframe .ratio {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .h_iframe iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: white;
+    }
+
+.HoverImg {
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+    .HoverImg:hover {
+        opacity: 0.7;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    }
+
+#resturant1 {
+    background-image: url(Resturant1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 257px;
+    height: 187px;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    display: inline;
+}
+
+#resturant2 {
+    background-image: url(Resturant1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 257px;
+    height: 187px;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    display: inline;
+}
+
+#resturant3 {
+    background-image: url(Resturant1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 257px;
+    height: 187px;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    display: inline;
+}
+

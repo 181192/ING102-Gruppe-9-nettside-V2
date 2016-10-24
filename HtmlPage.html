@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="no">
+<head>
+    <title>oh yeah</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Stylesheet -->
+    <link href="StyleSheet.css" type="text/css" rel="stylesheet" />
+    <link href="StyleSheetFooter.css" type="text/css" rel="stylesheet" />
+
+    <!-- jQuery libaries import -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+    <!-- Smooth scrooling jQuery code -->
+    <script src="JjjjjjQuery.js"></script>
+
+    <!-- Javascript -->
+    <script src="JavaScript.js"></script>
+    <script src="JavaScript2.js"></script>
+
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <!-- Google Maps JavaScript-->
+    <script src="GoogleMaps.js"></script>
+</head>
+<body>
+    <article>
+        <!-- Header -->
+        <header class="nav-down">
+            <div id="logo" class="menuUp">
+                <h1>#ThatLogO.</h1>
+                <!-- Toggle menyen i mobil visning, altså meny knapp toggle -->
+                <div id="navToggle">
+                    <a href="#">Menu</a>
+                </div>
+            </div>
+            <!-- Meny -->
+            <nav>
+                <ul>
+                    <li><a href="#hovedside">Om oss</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li>
+                        <a href="#">Gruppen</a>
+                        <nav>
+                            <ul style="background-color: #808080;">
+                                <li><a href="/Kristoffer.html">Kristoffer</a></li>
+                                <li><a href="/Jacob.html">Jacob</a></li>
+                                <li><a href="/Peder.html">Peder</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li><a href="/Prosjekt.html">Prosjekt</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Header slutt -->
+
+        <div id="page">
+            <section class="hide frontimage">
+                <!-- <img class="front" src="Front.jpg" alt="Front image" /> -->
+            </section>
+            <section id="startchange" class="space one">
+                <!-- name atributt hører til anker funksjon, slik at #HOVEDSIDE peker på name="HOVEDSIDE",
+                altså så vil menyen peke på element lenger ned inni samme nettside -->
+                <a id="hovedside"><h2 id="one" class="space3">OM OSS</h2></a>
+                <p>
+                    I ING-faget har fått i oppgave om å lage en internett side! Gruppen vår består av medlemmene: Jacob, Kristoffer og Colin og Peder! Planen våres er å lage en brukervennlig internett side, som ikke har alt for mye grafikk og tekst. Vi skal ha en enkel og plane side som ser bra ut!
+                </p>
+                <p>
+                    Målet våres er at alle skal jobbe min sin egen side. Slik at vi får gode kunnskaper i html/css. Vi møtes en gang i uken på et gruppe rom på Høyskolen. Her deler vi ideer om hvordan vi skal ha siden, og hjelper hverandre med problemer som oppstår på veien. Jacob skriver raport om hvilke ulemper og fordeler ved proskjetarbeidet, og hvilke fremgang vi har! Vi har blitt enige om å ha en lik stil/css over hele internett siden. Slik at det ikke blir flashy-pashy-shit! Vi laget et stylesheet som alle kan linke i html koden.
+                </p>
+            </section>
+            <section class="space2 two">
+                <a id="portfolio"><h2 id="two" class="space3">PORTFOLIO</h2></a>
+                <!-- Dette er modal biten, den har en knapp som åpner en html-side -->
+                <section>
+                    <br />
+                    <h3>KLIKK FOR Å SE EN LIVE-DEMO!</h3>
+                    <br />
+
+                    <!-- Å bruke knapp overstyrer javascriptet for smooth scrolling, kan ikke bruke vanlig "hyperlink" den funker ikke -->
+                    <button class="HoverImg" id="resturant1" onclick="location.href='#openModal'"></button>
+                    <button class="HoverImg" id="resturant2" onclick="location.href='#openModal'"></button>
+                    <button class="HoverImg" id="resturant3" onclick="location.href='#openModal'"></button>
+
+
+                    <div id="openModal" class="modalDialog">
+                        <div class="wrapper h_iframe">
+                            <a href="#close" title="Close" class="modalclose"></a>
+                            <img class="ratio" alt="Hvit bakgrunn" src="http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg" /> <!-- Link til hvit bakgrunn, må laste ned seinere -->
+                            <!--
+                                iframe funksjon, denne viser en nettside inne i modal elementet
+                                Det er en del variabler som scrolling (gjøre at en kan scrolle), frameborder (får en nettleser kant)
+                                allowfullscreen (maksimerer nettsiden som blir visst i modal),
+                                Resten av stylingen ligger i StyleSheet.css
+                            -->
+                            <!-- Scrolling atributt er utgått i HTML5, men "iframe { overflow:hidden; }" fungerer ikke i firefox og IE -->
+                            <iframe src="http://home.hib.no/studenter/h181192/resturant/index.html" name="targetframe" scrolling="yes" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </section>
+                <!-- Modal slutt -->
+            </section>
+        </div>
+        <!-- Footer nr.1 for kontakt oss og map -->
+        <footer>
+            <section class="four hide">
+                <div class="headline">
+                    <a id="kontakt"><h2 id="four" class="">KONTAKT OSS</h2></a>
+                    <div id="googleMap" class="rightcol"></div>
+                    <div class="icons">
+                        <img src="City-Gps.png" alt="logo">
+                        <h3 class="skrift">Bergen, Norge</h3>
+
+                        <img src="phone.png" alt="logo" />
+                        <h3 class="skrift">+47 815 00 657</h3>
+
+                        <img src="Gmail.png" alt="logo" />
+                        <h3 class="skrift">gruppe9@gmail.com</h3>
+                    </div>
+                    <p class="info">
+                        Hei! Du er hjertelig velkommet til vårt kontor på høyskolen i Bergen.
+                        Vi holder åpent man-fredag, fra 08-16. Kom gjerne innom for en prat
+                        om utvitklingen av din hjemmeside!.
+                    </p>
+                </div>
+            </section>
+        </footer>
+        <!-- Footer nr.1 slutt -->
+        <!-- Footer nr.2 for logo og copyrigth -->
+        <footer>
+            <p class="bunn">#thatlogo.</p>
+            <p class="rights">copyright 2016 gruppe9.no all rights reserved</p>
+        </footer>
+        <!-- Footer nr.2 slutt -->
+    </article>
+</body>
+</html>

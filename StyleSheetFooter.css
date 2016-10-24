@@ -1,0 +1,195 @@
+﻿
+
+/* Fra her til @media taggen er til mobilvisning. Alt som ligger her blir også med til desktop visning
+    skal det gjøres endringer som skal se anderledes ut på desktop visning må da disse endringene
+    skrives over i css koden som ligger inni @media{desktop} taggen
+*/
+
+footer {
+    background-color: black;
+    color: white;
+    padding-bottom:10px;
+    padding-top:10px;
+}
+
+.info {
+    padding-top: 40px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.icons img {
+    float: right;
+    position: absolute;
+    padding-left: 2px;
+    padding-top: 19px;
+}
+
+.icons h3 {
+    position: relative;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10%;
+    margin-right: 50%;
+    bottom: -5px;
+    left: 40px;
+}
+
+#paragraf {
+    left: 40px;
+    right: 40px;
+    text-align: center;
+}
+
+h1 {
+    /* text-decoration: underline; */
+    font-size: 200%;
+    font-weight: lighter;
+}
+
+h2 {
+    font-weight: lighter;
+    font-style: normal;
+    padding-top: 20px;
+}
+
+h3 {
+    font-weight: lighter;
+    font-style: normal;
+}
+
+
+h4 {
+    font-weight: lighter;
+}
+
+h5 {
+    font-weight: lighter;
+}
+
+.headline {
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    position: absolute;
+    padding: 20px;
+    margin: 0px;
+    font-weight: lighter;
+}
+
+#googleMap {
+    padding-top: 35px;
+    position: static;
+    width: 100%;
+    height: 380px;
+}
+
+.rightcol {
+    float: none;
+}
+
+.bunn {
+    padding-top: 60px;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.rights {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+/* Mobil slutt */
+
+
+
+
+
+
+/*  ******************************************
+    ******************************************
+    ******************************************
+    ******************************************
+*/
+
+
+
+/* Medium screens / desktop screens
+    Her vil alt som skal være i desktop modus legges til, er det noe som skal endres må en huske å 
+    skrive over de css kodene fra mobil-klassen, ellers så vil alt av koder her bli lagt oppå css koden til mobil
+*/
+@media all and (min-width: 741px) {
+
+    footer {
+        background-color: black;
+        margin: 0px auto 0px auto;
+        max-width: 100%;
+        min-width: 40%;
+        padding-left: 12%;
+        padding-right: 12%;
+        overflow: auto;
+    }
+
+    #googleMap {
+        padding-top: 35px;
+        position: relative;
+        width: 50%;
+        height: 380px;
+        margin-right: 15%;
+        margin-bottom: 40px;
+        z-index: 5;
+    }
+
+    .rightcol {
+        float: right;
+    }
+
+    .bunn {
+        text-align: center;
+        margin: 0px auto 10px auto;
+        max-width: 70%;
+        min-width: 40%;
+        padding: 20px;
+        overflow: auto;
+        margin-top: 400px;
+    }
+
+    .right {
+        text-align: center;
+        padding-top: 20px;
+        margin: 0px auto 10px auto;
+        max-width: 70%;
+        min-width: 40%;
+        padding: 20px;
+        overflow: auto;
+    }
+    .info {
+        margin-right: 70%;
+    }
+}
+
+
+
+/*  ******************************************
+    ******************************************
+    ******************************************
+    ******************************************
+*/
+
+/* For tablets */
+@media (min-width: 601px) and (max-width: 961px) {
+    .rightcol { /* Google Map skal legge seg over kontakt oss*/
+        float: none;
+    }
+
+    .bunn {
+        margin-top: 800px;
+    }
+
+    .info {
+        margin-right: 30%;
+    }
+}
+

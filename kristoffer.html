@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="no">
+<head>
+    <title>oh yeah</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Stylesheet -->
+    <link href="StyleSheet.css" type="text/css" rel="stylesheet" />
+    <link href="StyleSheetFooter.css" type="text/css" rel="stylesheet" />
+
+    <!-- jQuery libaries import -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+    <!-- Smooth scrooling jQuery code -->
+    <script src="JjjjjjQuery.js"></script>
+
+    <!-- Javascript -->
+    <script src="JavaScript.js"></script>
+
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <!-- Google Maps JavaScript-->
+    <script src="GoogleMaps.js"></script>
+</head>
+<body>
+    <article>
+        <!-- Header -->
+        <header class="nav-down">
+            <div id="logo" class="menuUp">
+                <h1>#ThatLogO.</h1>
+                <!-- Toggle menyen i mobil visning, altså meny knapp toggle -->
+                <div id="navToggle">
+                    <a href="#">Menu</a>
+                </div>
+            </div>
+            <!-- Meny -->
+            <nav>
+                <ul>
+                    <li><a href="/HtmlPage.html#hovedside">Om oss</a></li>
+                    <li><a href="/HtmlPage.html#portfolio">Portfolio</a></li>
+                    <li>
+                        <a href="#">Gruppen</a>
+                        <nav>
+                            <ul style="background-color: #808080;">
+                                <li><a href="/Kristoffer.html">Kristoffer</a></li>
+                                <li><a href="/Jacob.html">Jacob</a></li>
+                                <li><a href="/Peder.html">Peder</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li><a href="/Prosjekt.html">Prosjekt</a></li>
+                    <li><a href="/HtmlPage.html#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Header slutt -->
+
+        <div id="page">
+            <section class="hide frontimage">
+                <!-- <img class="front" src="Front.jpg" alt="Front image" /> -->
+            </section>
+            <section id="startchange" class="space one">
+                <!-- name atributt hører til anker funksjon, slik at #HOVEDSIDE peker på name="HOVEDSIDE",
+                altså så vil menyen peke på element lenger ned inni samme nettside -->
+                <a id="hovedside"><h2 id="one" class="space3">Kristoffer-Andre</h2></a>
+                <!-- Info om meg selv -->
+                <strong>Jeg heter Kristoffer-Andre</strong> og er 20 år. Jeg har fagbrev som <em>produksjons-elektroniker</em>,
+                og har jobbet hos Mekatronikk i Åsane i 4 år. På videregående gikk jeg TAF-elektro.
+                Dette er en ordning der en går på skolen og jobb samtidig, man ender om med både yrkesfagene,
+                og realfag med studie kompetanse. I tillegg starter en ut på jobb i bedrift fra dag en,
+                og får lærlingtid og til slutt ett fagbrev.
+                Dette synes jeg har vært en fordel, siden da har jeg
+                kunnet brukt både praksisen og teorien om en annen i løpet av utdanningsløpet. I tillegg sparte jeg et helt år,
+                da man normalt hadde brukt <em>5 år</em> på samme utdanning, brukte jeg <strong>4 år</strong> med denne TAF-ordningen.
+                </p>
+                <h2 class="hcenter"><em>Bybanen er livet</em></h2>
+                <p class="space1">
+                    Ellers er jeg bodsatt på Lagunen med samboeren min, jeg kommer opprinnelig fra Sveio utenfor Haugesund. Jeg har bodd i Bergens
+                    området i litt over 4 år. Nettopp pusset opp leilighet og har anskaffet en kanin. Og begynt å pendle med bybanen,
+                    som forøvrig krever god tolmodighet og at man setter pris på små ting som sitteplasser.
+                    <em>Trives også godt her i regnet hehe...</em> <!-- EM elemeter -->
+                </p>
+                <h2 class="hcenter">Øresus og lukten av svidde prossesorer</h2>
+                <p class="space1">
+                    Som hobbyer spiller jeg mye bass og gitar, og bruker mye tid rundt linux og data. Blandt annet har jeg flere
+                    <a href="https://www.raspberrypi.org/" target="_blank">raspberry pi's</a> som jeg leker meg med, og har i tillegg
+                    en dedikert linux server som streamer innhold til det av elektroniske duppedingsere jeg skulle nå bruke.
+                    På musikk siden har jeg spillt i flere band, interessene innenfor musikk er nok mye trash metall.
+                    Men jeg er mottakelig for det meste, skulle jeg si noen norske band jeg hører spesielt mye på må det nok være
+                    <strong>Kvelertak</strong>, <strong>Honningbarna</strong> og <strong>Skambankt!!</strong> <!-- Strong elementer -->
+                </p>
+                <h2 class="hcenter">Motivert til å kjempe</h2>
+                <p class="space1">
+                    Jeg ser frem til å ta data-ingeniør utdanningen, jeg er motivert og ønsker å lykkes. Jeg er interessert i faget,
+                    liker å lære om data og programmering. Jeg håper denne utdanningen gir meg det jeg ønsker, og at jeg får den
+                    drømme jobben jeg vil ha.
+            </section>
+            <section class="space2 two"></section>
+        </div>
+        <!-- Footer nr.1 for kontakt oss og map -->
+        <footer>
+            <section class="four hide">
+                <div class="headline">
+                    <a id="kontakt"><h2 id="four" class="">KONTAKT OSS</h2></a>
+                    <div id="googleMap" class="rightcol"></div>
+                    <div class="icons">
+                        <img src="City-Gps.png" alt="logo">
+                        <h3 class="skrift">Bergen, Norge</h3>
+
+                        <img src="phone.png" alt="logo" />
+                        <h3 class="skrift">+47 815 00 657</h3>
+
+                        <img src="Gmail.png" alt="logo" />
+                        <h3 class="skrift">gruppe9@gmail.com</h3>
+                    </div>
+                    <p class="info">
+                        Hei! Du er hjertelig velkommet til vårt kontor på høyskolen i Bergen.
+                        Vi holder åpent man-fredag, fra 08-16. Kom gjerne innom for en prat
+                        om utvitklingen av din hjemmeside!.
+                    </p>
+                </div>
+            </section>
+        </footer>
+        <!-- Footer nr.1 slutt -->
+        <!-- Footer nr.2 for logo og copyrigth -->
+        <footer>
+            <p class="bunn">#thatlogo.</p>
+            <p class="rights">copyright 2016 gruppe9.no all rights reserved</p>
+        </footer>
+        <!-- Footer nr.2 slutt -->
+    </article>
+</body>
+</html>
