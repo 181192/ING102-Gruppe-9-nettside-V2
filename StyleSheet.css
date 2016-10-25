@@ -1,4 +1,4 @@
-﻿
+
 /* Fra her til @media taggen er til mobilvisning. Alt som ligger her blir også med til desktop visning
     skal det gjøres endringer som skal se anderledes ut på desktop visning må da disse endringene
     skrives over i css koden som ligger inni @media{desktop} taggen
@@ -39,6 +39,9 @@ iframe {
     overflow: auto;
 }
 
+    
+
+
 header {
     /* background-color: white; */ /* Mobil meny linje */
     background-color: black;
@@ -77,6 +80,8 @@ header {
 
     header > div#logo > h1 {
         color: white;
+        text-align: left; /*venstrejusterer logo for at den skal passe i alle mobilvisninger*/
+        position: relative;
         font-weight: 300;
         text-transform: lowercase;
     }
@@ -245,6 +250,50 @@ section {
     top: -100px;
 }
 
+/*perspekttivbilder på navn side */
+.perspektbildepeder {
+    padding-top: 5em;
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    padding-bottom: 1em;
+
+}
+.perspektbildekristoffer {
+    padding-top: 5em;
+    display: block;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    padding-bottom: 2em;
+    
+}
+.perspektbildejacob {
+    padding-top: 1em;
+    display: block;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    padding-bottom: 1em;
+}
+.hcenter {
+    text-align: center;
+    padding-top: ;
+
+}
+.vindu {
+
+}
+.perspektbildejacob1 {
+    padding-top: 1em;
+    margin: auto;
+    display: block;
+    width: 100%;
+    position: relative;
+    padding-bottom: 1em;
+}
+
 
 /* Mobil css koder ferdig */
 
@@ -370,7 +419,7 @@ section {
         padding-left: 15%; /* Viktig, mellomrom fra kant til skrift */
     }
 
-    .space {
+    .space {file:///C:/Users/Peder/OneDrive%20-%20H%C3%B8gskolen%20i%20Bergen/v01/Frimasiden/peder.html#
         margin-top: 3em;
         margin-bottom: 0em;
     }
@@ -405,10 +454,51 @@ section {
         -ms-grid-row-align: center;
         align-items: center;
     }
+    .portall{
+    margin: 10%,auto,20%,auto;
+    text-align: center;
+    padding-left: 25%;
+    position: justify;
+
+
 }
-/* Desktop koder ferdig*/
+    /*Peder sitt bildet*/
+    .perspektbildepeder {
+    padding-top: 5em;
+    display: block;
+    margin: auto;
+    width: 30%;
+    position: relative;
+    
+}
+.perspektbildekristoffer {
+    padding-top: 3em;
+    display: block;
+    margin: auto;
+    width: 25%;
+    position: relative;
+    padding-bottom: 3em;
+}
+.perspektbildejacob {
+    padding-top: 1em;
+    margin: auto;
+    display: block;
+    width: 35%;
+    position: relative;
+    padding-bottom: 1em;
+}
+.perspektbildejacob1 {
+    padding-top: 1em;
+    margin: auto;
+    display: block;
+    width: 50%;
+    position: relative;
+    padding-bottom: 1em;
+}
 
 
+
+}/*desktop slutt*/
 
 
 
@@ -527,3 +617,6 @@ section {
 #resturant4 {
     background-image: url(images/Resturant1.jpg);
 }
+
+
+/*ONE-DRIVETEST*/
