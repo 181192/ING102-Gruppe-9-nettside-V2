@@ -1,7 +1,7 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="no">
 <head>
-    <title>Peder</title>
+    <title>Prosjekt</title>
     <link rel="SHORTCUT ICON" href="/smile.png">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,6 +19,7 @@
 
     <!-- Javascript -->
     <script src="JavaScript.js"></script>
+    <!--<script src="Prosjektjava.js"></script> --> <!--her linker vi til javascriptet-->
 
     <!-- Google Maps API -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -62,27 +63,50 @@
             <section class="hide frontimage">
                 <!-- <img class="front" src="Front.jpg" alt="Front image" /> -->
             </section>
-            <section id="startchange" class="space one">
-                <!--
-                TEKST OG BILDER FRA GRUPPE SIDER HER!
-                    *******************************************************
-                    *******************************************************
-                    *******************************************************
-                    *******************************************************
-                    *******************************************************
-                    *******************************************************
-                    *******************************************************
-                    *******************************************************
-                    *******************************************************
-                    *******************************************************
-                    *******************************************************
-                    *******************************************************
-                    *******************************************************
-                    *******************************************************
-                -->
-            </section>
-            <section class="space2 two"></section>
+
+           
+    <section id="startchange" class="space one" style="text-align: center">
+        <a id="hovedside"><h1 id="one" ></br>Litt om prosjektet vårt!</h1></a>
+                 
+            <p class="spaceProsjekt"> Vi skal lage et firma som utvikler internett sider til restauranter.
+            </br> Vi skal opprette en hjemmeside for vårt firma, med informasjon om oss og hva vi selger. 
+            </br> Nettsiden vår viser, en Portefølje av hva vi selger. 
+            </br>Denne Portefølje er en mal for restauranten sin internettside.
+            </br></br>Trykk på knappen under for å se den gamle web-siden vår</p>
+
+            <button class="HoverImg" id="resturant4" onclick="location.href='#openModal4'"></button>
+            <div id="openModal4" class="modalDialog">
+                        <div class="wrapper h_iframe">
+                            <a href="#close" title="Close" class="modalclose"></a>
+                            <img alt="Hvit bakgrunn" src="http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg" /> <!-- Link til hvit bakgrunn, må laste ned seinere -->
+
+                            <iframe src="http://home.hib.no/studenter/h181192/gruppe9/main.html" name="targetframe" scrolling="yes" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+            <p class="spaceProsjekt"> Last ned Vilkår, prosjektbeskrivelse og statusrapport</p>
+            <button onclick="window.location.href='docs/Vilkår.docx'" class="knappdesign">Vilkår til bedriften</button>
+            <button onclick="window.location.href='docs/Prosjektbeskrivelse_gruppe 9.docx'" class="knappdesign">Prosjektbeskrivelse</button>
+            <button onclick="window.location.href='docs/Statusrapport 1.docx'" class="knappdesign">Statusrapport</button>
+
+            <!--<a href="Prosjektbeskrivelse_gruppe 9.docx" download="prosjektbeskrivelse">Hei</a>-->
+
+
+        <main class="space">
+            <div class="senter">
+            <div><button onclick="loadDoc()">Nøkkel</button></div>
+            <p id="display">Trykk på knappen over for å laste inn!</p>
         </div>
+        </main>
+    </section>
+
+
+        <section id="startchange" class="space2" >
+         </section>
+
+        </div>
+
+
         <!-- Footer nr.1 for kontakt oss og map -->
         <footer>
             <section class="four hide">
