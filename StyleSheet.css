@@ -39,8 +39,6 @@ iframe {
     overflow: auto;
 }
 
-    
-
 
 header {
     /* background-color: white; */ /* Mobil meny linje */
@@ -250,50 +248,200 @@ section {
     top: -100px;
 }
 
-/*perspekttivbilder på navn side */
-.perspektbildepeder {
-    padding-top: 5em;
-    display: block;
-    margin: auto;
-    position: relative;
-    width: 100%;
-    padding-bottom: 1em;
-
-}
-.perspektbildekristoffer {
-    padding-top: 5em;
-    display: block;
-    margin: auto;
-    width: 100%;
-    position: relative;
-    padding-bottom: 2em;
-    
-}
-.perspektbildejacob {
-    padding-top: 1em;
-    display: block;
-    margin: auto;
-    width: 100%;
-    position: relative;
-    padding-bottom: 1em;
-}
 .hcenter {
     text-align: center;
-    padding-top: ;
-
+    padding-top:;
 }
+
 .vindu {
-
 }
-.perspektbildejacob1 {
-    padding-top: 1em;
-    margin: auto;
-    display: block;
-    width: 100%;
+
+p.center {
+    font-weight: lighter;
+    margin: 20px auto 20px auto;
+    text-align: center;
+    width: 60%;
+}
+
+.senter {
+    text-align: center;
+    margin: 10px auto 10px auto;
+    width: 20%;
+    height: 10%;
+}
+
+.startchange {
+    text-align: center;
+    margin: 10px auto 20px auto;
+}
+
+.spaceProsjekt {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.knappdesign {
+    border-radius: 30%;
+    width: 100px;
+    height: 100px;
+    background: #252525;
+    color: white;
+    cursor: pointer;
+    font-size: 11px;
+    text-align: center;
+}
+
+    .knappdesign:hover {
+        opacity: 0.9;
+        -ms-filter: "progid;
+    }
+
+/*  ******************************************
+    ******************************************
+    ******************************************
+    ******************************************
+*/
+
+/* Liten test på modal med nettside inni modal */
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: opacity 400ms ease-in;
+    -o-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+    .modalDialog:target {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        pointer-events: auto;
+    }
+
+    .modalDialog > div {
+        background: #ffffff;
+        background: -webkit-linear-gradient(#ffffff);
+        background: -o-linear-gradient(#ffffff);
+    }
+
+.close:hover {
+    background: #00d9ff;
+}
+
+.modalclose {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #222;
+}
+
+.wrapper {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background: #CCC;
+}
+
+.h_iframe {
     position: relative;
+}
+
+    .h_iframe .ratio {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .h_iframe iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: white;
+    }
+
+.HoverImg {
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+    .HoverImg:hover {
+        opacity: 0.7;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    }
+
+#resturant1, #resturant2, #resturant3, #restaurant4 {
+    background-image: url(images/Resturant1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 257px;
+    height: 187px;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    display: inline;
+}
+
+#resturant1 {
+    background-image: url(images/Resturant1.jpg);
+}
+
+#resturant2 {
+    background-image: url(images/ResturantV1.PNG);
+}
+
+#resturant3 {
+    background-image: url(images/Resturant1.jpg);
+}
+
+#resturant4 {
+    background-image: url(images/Gruppe9Webside.png);
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+/*perspekttivbilder på navn side */
+img.perspektivbilde {
+    display: block;
+    margin: auto;
+    position: relative;
+    padding-top: 1em;
     padding-bottom: 1em;
 }
 
+#perspektbildepeder {
+    width: 100%;
+    padding-top: 5em;
+    padding-bottom: 1em;
+}
+
+#perspektbildekristoffer {
+    width: 100%;
+    padding-top: 5em;
+    padding-bottom: 2em;
+}
+
+#perspektbildejacob {
+    width: 100%;
+}
+
+.perspektbildejacob1 {
+    width: 100%;
+}
 
 /* Mobil css koder ferdig */
 
@@ -419,8 +567,8 @@ section {
         padding-left: 15%; /* Viktig, mellomrom fra kant til skrift */
     }
 
-    .space {file:///C:/Users/Peder/OneDrive%20-%20H%C3%B8gskolen%20i%20Bergen/v01/Frimasiden/peder.html#
-        margin-top: 3em;
+    .space {
+        file: ///C:/Users/Peder/OneDrive%20-%20H%C3%B8gskolen%20i%20Bergen/v01/Frimasiden/peder.html# margin-top: 3em;
         margin-bottom: 0em;
     }
 
@@ -454,51 +602,36 @@ section {
         -ms-grid-row-align: center;
         align-items: center;
     }
-    .portall{
-    margin: 10%,auto,20%,auto;
-    text-align: center;
-    padding-left: 25%;
-    position: justify;
 
+    .portall {
+        margin: 10%,auto,20%,auto;
+        text-align: center;
+        padding-left: 25%;
+        position: justify;
+    }
 
-}
     /*Peder sitt bildet*/
-    .perspektbildepeder {
-    padding-top: 5em;
-    display: block;
-    margin: auto;
-    width: 30%;
-    position: relative;
-    
-}
-.perspektbildekristoffer {
-    padding-top: 3em;
-    display: block;
-    margin: auto;
-    width: 25%;
-    position: relative;
-    padding-bottom: 3em;
-}
-.perspektbildejacob {
-    padding-top: 1em;
-    margin: auto;
-    display: block;
-    width: 35%;
-    position: relative;
-    padding-bottom: 1em;
-}
-.perspektbildejacob1 {
-    padding-top: 1em;
-    margin: auto;
-    display: block;
-    width: 50%;
-    position: relative;
-    padding-bottom: 1em;
-}
+    #perspektbildepeder {
+        padding-top: 5em;
+        width: 30%;
+        padding-bottom: 0em;
+    }
 
+    #perspektbildekristoffer {
+        padding-top: 3em;
+        width: 25%;
+        padding-bottom: 3em;
+    }
 
+    #perspektbildejacob {
+        width: 35%;
+    }
 
-}/*desktop slutt*/
+    .perspektbildejacob1 {
+        width: 50%;
+    }
+}
+/*desktop slutt*/
 
 
 
@@ -507,116 +640,3 @@ section {
     ******************************************
     ******************************************
 */
-
-
-
-
-/* Liten test på modal med nettside inni modal */
-.modalDialog {
-    position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.8);
-    z-index: 99999;
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    -webkit-transition: opacity 400ms ease-in;
-    -o-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    pointer-events: none;
-}
-
-    .modalDialog:target {
-        opacity: 1;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        pointer-events: auto;
-    }
-
-    .modalDialog > div {
-        background: #ffffff;
-        background: -webkit-linear-gradient(#ffffff);
-        background: -o-linear-gradient(#ffffff);
-    }
-
-.close:hover {
-    background: #00d9ff;
-}
-
-.modalclose {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #222;
-}
-
-.wrapper {
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    background: #CCC;
-}
-
-.h_iframe {
-    position: relative;
-}
-
-    .h_iframe .ratio {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-
-    .h_iframe iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        background-color: white;
-    }
-
-.HoverImg {
-    border-radius: 5px;
-    cursor: pointer;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
-
-    .HoverImg:hover {
-        opacity: 0.7;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-    }
-
-#resturant1, #resturant2, #resturant3, #resturant4 {
-    background-image: url(images/Resturant1.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 257px;
-    height: 187px;
-    margin-right: 5%;
-    margin-bottom: 10px;
-    display: inline;
-}
-#resturant1 {
-    background-image: url(images/Resturant1.jpg);
-}
-
-#resturant2 {
-    background-image: url(images/ResturantV1.PNG);
-}
-#resturant3 {
-    background-image: url(images/Resturant1.jpg);
-}
-#resturant4 {
-    background-image: url(images/Resturant1.jpg);
-}
-
-
-/*ONE-DRIVETEST*/
