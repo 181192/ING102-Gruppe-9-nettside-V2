@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/css" href="xmlcss.css"?>
+<album>
+  <todo>
+    <Linker>Ærlighet</Linker>
+  </todo>
+
+  <todo>
+    <Linker>Holdning</Linker> 
+  </todo>
+
+  <todo>
+    <Linker>Jevnt arbeid</Linker>
+  </todo> 
+</album>
