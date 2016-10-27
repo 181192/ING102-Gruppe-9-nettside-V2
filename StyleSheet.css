@@ -385,34 +385,34 @@ p.center {
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
     }
 
-#resturant1, #resturant2, #resturant3, #restaurant4 {
-    background-image: url(images/Resturant1.jpg);
+#restaurant1, #restaurant2, #restaurant3, #restaurant4 {
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 257px;
     height: 187px;
-    margin-right: 5%;
+    margin-right: 1%;
     margin-bottom: 10px;
     display: inline;
 }
 
-#resturant1 {
+#restaurant1 {
     background-image: url(images/Resturant1.jpg);
 }
 
-#resturant2 {
+#restaurant2 {
     background-image: url(images/ResturantV1.PNG);
 }
 
-#resturant3 {
+#restaurant3 {
     background-image: url(images/Resturant1.jpg);
 }
 
-#resturant4 {
+#restaurant4 {
     background-image: url(images/Gruppe9Webside.png);
     margin-left: 5%;
     margin-top: 20px;
 }
+/* Modal ferdig */
 
 /*perspekttivbilder på navn side */
 img.perspektivbilde {
@@ -567,8 +567,13 @@ img.perspektivbilde {
         padding-left: 15%; /* Viktig, mellomrom fra kant til skrift */
     }
 
+    #iframePadding {
+        padding-right: 2%; /* Viktig, mellomrom fra kant til skrift */
+        padding-left: 2%; /* Viktig, mellomrom fra kant til skrift */
+    }
+
     .space {
-        file: ///C:/Users/Peder/OneDrive%20-%20H%C3%B8gskolen%20i%20Bergen/v01/Frimasiden/peder.html# margin-top: 3em;
+        margin-top: 3em;
         margin-bottom: 0em;
     }
 
