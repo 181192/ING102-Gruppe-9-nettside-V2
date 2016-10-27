@@ -22,7 +22,7 @@ body {
     height: 100%;
     min-height: 100%;
     text-rendering: optimizeLegibility;
-    background: url(images/Tekno.jpg) no-repeat center center fixed; /* Bakgrunnsbilde her */
+    background: url(images/hib.jpg) no-repeat center center fixed; /* Bakgrunnsbilde her */
     -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover; /* Mozilla*/
     -o-background-size: cover; /* Opera*/
@@ -218,7 +218,7 @@ section {
     section.one {
         background-color: white;
         margin-top: 400px;
-        padding-bottom: 1em;
+        padding-bottom: 3em;
     }
 
     section.two {
@@ -393,6 +393,7 @@ p.center {
     margin-right: 1%;
     margin-bottom: 10px;
     display: inline;
+    align-items: center;
 }
 
 #restaurant1 {
@@ -587,6 +588,7 @@ img.perspektivbilde {
 
     .space3 {
         margin-top: 10em;
+        padding-top: 2em;
         margin-bottom: 1em;
     }
 
