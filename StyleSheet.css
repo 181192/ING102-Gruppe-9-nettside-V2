@@ -27,6 +27,7 @@ body {
     -moz-background-size: cover; /* Mozilla*/
     -o-background-size: cover; /* Opera*/
     background-size: cover;
+    background-attachment: fixed;
 }
 
 iframe {
