@@ -13,8 +13,6 @@ if (screen && screen.width > 641) {
 ))
 };
 
-
-
 /* Mobilvisning */
 $(document).ready(function () {
     $("#navToggle a").click(function (e) {
@@ -54,13 +52,12 @@ $(document).ready(function () {
 
 $('.modalclose ').click(function () {
     $('.modalclose, .inner').hide();
-
 })
 $('.inner').click(function (e) {
     e.stopPropagation();
 })
 
-
+// Hente frem Prosjektxml.xml dokument ved hjep av JavaScript, når en trykker på knappen "nøkkel"
 function loadDoc() {
 
     var xhttp = new XMLHttpRequest();
@@ -71,11 +68,9 @@ function loadDoc() {
             writeData(xml);
         }
     }
-
     xhttp.open("GET", "Prosjektxml.xml", true);
     xhttp.send();
 }
-
 
 function writeData(xml) {
 
@@ -89,6 +84,5 @@ function writeData(xml) {
         }
         table += "</table>";
         display.innerHTML = table;
-
     }
 }
