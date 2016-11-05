@@ -313,13 +313,14 @@ p.center {
     -webkit-transition: opacity 400ms ease-in;
     -o-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
-    pointer-events: none;
+    /* pointer-events: none; */
+    /* "pointer-events": Denne kommer opp som error på CSS3, men kommer til å bli gyldig i CSS4 mer info: https://css-tricks.com/almanac/properties/p/pointer-events/ */
 }
 
     .modalDialog:target {
         opacity: 1;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        pointer-events: auto;
+        /* pointer-events: auto; */
     }
 
     .modalDialog > div {
