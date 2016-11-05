@@ -313,13 +313,13 @@ p.center {
     -webkit-transition: opacity 400ms ease-in;
     -o-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
-    /* pointer-events: none; */
+    pointer-events: none;
 }
 
     .modalDialog:target {
         opacity: 1;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        /* pointer-events: auto; */
+        pointer-events: auto;
     }
 
     .modalDialog > div {
