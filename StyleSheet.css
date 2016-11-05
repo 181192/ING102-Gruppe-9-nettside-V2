@@ -252,6 +252,9 @@ section {
     margin-bottom: 20em;
 }
 
+.space2 {
+    margin-bottom: 20em;
+}
 .nav-up {
     top: -100px;
 }
@@ -394,7 +397,7 @@ p.center {
     }
 
 .portall {
-    position: unset;
+    position: static;
 }
 
 #side1, #side2, #side3, #side4 {
