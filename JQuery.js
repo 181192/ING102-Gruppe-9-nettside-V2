@@ -23,7 +23,6 @@ var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $('header').outerHeight();
 
-
 $(window).scroll(function (event) {
     didScroll = true;
 });
@@ -37,13 +36,13 @@ setInterval(function () {
 
 function hasScrolled() {
     var st = $(this).scrollTop();
-
-    // Make sure they scroll more than delta
+    
+    //Skjekke om det er blitt scrollet mer enn "delta"
     if (Math.abs(lastScrollTop - st) <= delta)
         return;
-
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
+    
+    // Viss en har scrollet og er forbi navbar/meny, legg til klassen .nav-up.
+    // Dette er nødvendig slik at du aldri kan se hva som er "bak" meny linken.
     if (st > lastScrollTop && st > navbarHeight) {
         // Scroll Down
         $('header').removeClass('nav-down').addClass('nav-up');
@@ -53,7 +52,6 @@ function hasScrolled() {
             $('header').removeClass('nav-up').addClass('nav-down');
         }
     }
-
     lastScrollTop = st;
 }
 
