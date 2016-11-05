@@ -1,5 +1,4 @@
 
-
 /* Fra her til @media taggen er til mobilvisning. Alt som ligger her blir også med til desktop visning
     skal det gjøres endringer som skal se anderledes ut på desktop visning må da disse endringene
     skrives over i css koden som ligger inni @media{desktop} taggen
@@ -112,11 +111,8 @@ h5 {
     padding-bottom: 20px;
     color: black;
 }
+
 /* Mobil slutt */
-
-
-
-
 
 
 /*  ******************************************
@@ -131,7 +127,7 @@ h5 {
     Her vil alt som skal være i desktop modus legges til, er det noe som skal endres må en huske å 
     skrive over de css kodene fra mobil-klassen, ellers så vil alt av koder her bli lagt oppå css koden til mobil
 */
-@media all and (min-width: 741px) {
+@media all and (min-width: 768px) {
 
     footer {
         background-color: white;
@@ -191,6 +187,11 @@ h5 {
 */
 
 /* For tablets */
+/*  Her skal google map kartet legge seg over kontakt oss feltet, 
+    men menyen skal ikke ha gått over til å være i mobilvisning enda. 
+    Også skal heller ikke teksten i vinduet flyte helt ut enda, 
+    men i det øyeblikket skjermen går over fra desktop til mobil visning, 
+    skal teksten trekke seg helt ut i kantene på skjermen */
 @media (min-width: 601px) and (max-width: 961px) {
     .rightcol { /* Google Map skal legge seg over kontakt oss*/
         float: none;
