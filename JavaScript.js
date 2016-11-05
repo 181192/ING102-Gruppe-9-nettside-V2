@@ -1,9 +1,9 @@
 
 /* Lukk menyen ved å trykke en annen plass på skjermen, som ikke inneholder meny elementer */ 
-if (screen && screen.width > 641) {
+if (screen && screen.width > 768) { /* Mobil visning grense normal 641px, endret til 768px, for å tilpasse nettbrett/ipad bedre */
     document.write($(document).click(function (event) {
         if (!$(event.target).closest('nav').length) {
-            if ($(window).width() <= "741px") { /* Mobil visning grense normal 641px, endret til 741px */
+            if ($(window).width() <= "768") {  /* Mobil visning grense normal 641px, endret til 768px, for å tilpasse nettbrett/ipad bedre */
                 if ($('nav').is(":visible")) {
                     $('nav').hide();
                 }
@@ -24,7 +24,7 @@ $(document).ready(function () {
 
     });
     $(window).resize(function () {
-        if ($(window).width() >= "741") { /* Mobil visning grense normal 641px, endret til 741px */
+        if ($(window).width() >= "768") {  /* Mobil visning grense normal 641px, endret til 768px, for å tilpasse nettbrett/ipad bedre */
             $("header > nav").css("display", "block");
 
             if ($("#logo").attr('class') == "menuDown") {
@@ -37,7 +37,7 @@ $(document).ready(function () {
     });
 
     $("header > nav > ul > li > a").click(function (e) {
-        if ($(window).width() <= "741") { /* Mobil visning grense normal 641px, endret til 741px */
+        if ($(window).width() <= "768") { /* Mobil visning grense normal 641px, endret til 768px, for å tilpasse nettbrett/ipad bedre */
             if ($(this).siblings().size() > 0) {
                 e.preventDefault();
                 $(this).siblings().slideToggle("fast")
