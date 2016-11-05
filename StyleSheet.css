@@ -71,10 +71,12 @@ header {
 
     header > .menuDown {
         box-shadow: 0 3px 5px rgba(0,0,0,.15);
+        height: 60px;
     }
 
     header > .menuUp {
         box-shadow: none;
+        height: 60px;
     }
 
     header > div#logo > h1 {
@@ -88,6 +90,8 @@ header {
     header > div#logo > div#navToggle { /* Meny knapp */
         background-color: black;
         position: absolute;
+        height: 60px;
+        padding-top: 5px;
         right: 0;
         top: 0;
         -webkit-transition: 300ms all ease;
@@ -135,6 +139,7 @@ header {
         header nav > ul > li {
             border-bottom: 1px dotted rgba(0,0,0,.1);
             position: relative;
+            padding-top: 5px;
         }
 
             header nav > ul > li:last-of-type {
@@ -195,7 +200,13 @@ header {
             color: rgba(255,255,255,1);
         }
 
-
+img.align-left { /* venstre justering på logo */
+    float: left;
+}
+img.fixed {
+    height: 63px;
+    width: auto;
+}
 
 p {
     color: #636363;
@@ -382,7 +393,11 @@ p.center {
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
     }
 
-#restaurant1, #restaurant2, #restaurant3, #restaurant4 {
+.portall {
+    position: unset;
+}
+
+#side1, #side2, #side3, #side4 {
     background-repeat: no-repeat;
     background-size: cover;
     width: 257px;
@@ -393,19 +408,19 @@ p.center {
     align-items: center;
 }
 
-#restaurant1 {
+#side1 {
     background-image: url(images/Resturant1.jpg);
 }
 
-#restaurant2 {
-    background-image: url(images/ResturantV1.PNG);
+#side2 {
+    background-image: url(images/Resturant.PNG);
 }
 
-#restaurant3 {
-    background-image: url(images/Resturant1.jpg);
+#side3 {
+    background-image: url(images/firmaside.PNG);
 }
 
-#restaurant4 {
+#side4 {
     background-image: url(images/Gruppe9Webside.png);
     margin-left: 5%;
     margin-top: 20px;
@@ -478,7 +493,7 @@ img.perspektivbilde {
         -webkit-flex-direction: row;
         -ms-flex-direction: row;
         flex-direction: row;
-        line-height: 70px;
+        line-height: 60px;
         padding: 0 3rem;
         position: fixed; /* Meny linje */
         text-align: left;
@@ -488,7 +503,10 @@ img.perspektivbilde {
 
         header > div#logo {
             background-color: transparent;
-            line-height: 70px;
+            line-height: 60px;
+            padding-top: 5px;
+            padding-right: 0px;
+            float: left;
         }
 
             header > div#logo > h1 {
@@ -608,11 +626,9 @@ img.perspektivbilde {
     }
 
     .portall {
-        
         text-align: center;
         padding-left: 10%;
         padding-right: 10%;
-        position: relative;
     }
 
     /*Peder sitt bildet*/

@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <html lang="no">
 <head>
-    <title>Peder</title>
-    <link rel="SHORTCUT ICON" href="images/smile.png">
+    <title>Gruppe 9</title>
+    <link rel="SHORTCUT ICON" href="images/icon.png">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -11,7 +11,6 @@
     <link href="StyleSheetFooter.css" type="text/css" rel="stylesheet" />
 
     <!-- jQuery libaries import -->
-
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 
     <!-- Smooth scrooling jQuery code -->
@@ -21,7 +20,7 @@
     <script src="JavaScript.js"></script>
 
     <!-- Google Maps API -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMOLxYpsN-4edIWhQwpXxnJAKLgZgoq7I&callback=initialize"></script>
     <!-- Google Maps JavaScript-->
     <script src="GoogleMaps.js"></script>
 </head>
@@ -30,7 +29,8 @@
         <!-- Header -->
         <header class="nav-down">
             <div id="logo" class="menuUp">
-                <h1>#ThatLogO.</h1>
+                <a href="./"><img class="align-left fixed" src="images/rsz_logo.png" /></a>
+                <!-- <h1 id="fix-logo-venstre">#ThatLogo.</h1> -->
                 <!-- Toggle menyen i mobil visning, altså meny knapp toggle -->
                 <div id="navToggle">
                     <a href="#">Menu</a>
@@ -39,10 +39,9 @@
             <!-- Meny -->
             <nav>
                 <ul>
-                    <li><a href="index.html#hovedside">Om oss</a></li>
-                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="#hovedside">Om oss</a></li>
                     <li>
-                        <a href="#">Gruppen <span class="toggle">Expand</span><span class="caret"></span></a>
+                        <a href="#">Gruppe <span class="toggle">Expand</span><span class="caret"></span></a>
                         <nav>
                             <ul style="background-color: #808080;">
                                 <li><a href="kristoffer.html">Kristoffer</a></li>
@@ -51,8 +50,9 @@
                             </ul>
                         </nav>
                     </li>
+                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="prosjekt.html">Prosjekt</a></li>
-                    <li><a href="index.html#kontakt">Kontakt</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
                 </ul>
             </nav>
         </header>
@@ -63,32 +63,33 @@
                 <!-- <img class="front" src="Front.jpg" alt="Front image" /> -->
             </section>
             <section id="startchange" class="space one">
-              
-         <p class="mellom">
-             <img class="perspektivbilde" id="perspektbildepeder" src="images/peder2.jpg" alt="Peder"/>
-             <h2>Litt om meg!</h1>
-             Jeg heter Peder og jeg studerer <em>Data-Ingeniør</em> på 
-             <a href="http://www.hib.no/" target="_blank">Høyskolen i bergen</a> Jeg er 23 år og bor i 
-             <strong>Sandviken i Bergen</strong>. Her bor jeg med min samboer. Jeg har bodd i Bergen 
-             meste parten av livet. <br> Etter videregående har jeg jobbet på <em>Meny</em> og tatt 
-             opp igjen en god del fag fra videregående skole. Jeg gikk et par år på danielsen intensiv 
-             i forbindelse med dette. Jeg har alltid vært interessert i data, men usikker på valg av utdanning. 
-             Et år etter <em>VGS</em>, var målet å bli noe i livet, og det var Data-ingeniør!
-         </p>
-         <h2>Ting eg liker på fritiden!</h2>
-         <p class="mellom">
-             Når jeg har fri liker eg å ta noen kalde pils med gamle, og nye venner. 
-             Jeg digger å gå på tur i fjellet enten det er med ski, sykkel eller bare gåing! 
-             Dra med seg et telt og en fullstappet sekk med mat og drikke- finnes ikke noe bedre sted å nyte dette, 
-             enn på fjellet! Når jeg ikke er på fjellet, er jeg på festival, jeg elsker å dra på festivaler, 
-             iallefall <em>Roskilde-festival</em>, hvor jeg var ifjord og så McCartney. 
-         </p>
-         <p class="mellom"> 
-          Jeg brygger også øl på fritiden. Jeg pleier å dra til hytten våres i sunnfjord, 
-            hvor vi har en kjeller som er perfekt til brygging! Dette er en hobby jeg deler med min bror. 
-            Vi reiser opp til sogn. Lager øl og smaker på ølet! Vi får som oftest veldig god øl, 
-            men det hender at det også kan smake pyton :D 
-         </p>
+
+                <p class="mellom">
+                    <img class="perspektivbilde" id="perspektbildepeder" src="images/peder2.jpg" alt="Peder" />
+                    <h2>
+                        Litt om meg!</h1>
+                        Jeg heter Peder og jeg studerer <em>Data-Ingeniør</em> på
+                        <a href="http://www.hib.no/" target="_blank">Høyskolen i bergen</a> Jeg er 23 år og bor i
+                        <strong>Sandviken i Bergen</strong>. Her bor jeg med min samboer. Jeg har bodd i Bergen
+                        meste parten av livet. <br> Etter videregående har jeg jobbet på <em>Meny</em> og tatt
+                        opp igjen en god del fag fra videregående skole. Jeg gikk et par år på danielsen intensiv
+                        i forbindelse med dette. Jeg har alltid vært interessert i data, men usikker på valg av utdanning.
+                        Et år etter <em>VGS</em>, var målet å bli noe i livet, og det var Data-ingeniør!
+                </p>
+                <h2>Ting eg liker på fritiden!</h2>
+                <p class="mellom">
+                    Når jeg har fri liker eg å ta noen kalde pils med gamle, og nye venner.
+                    Jeg digger å gå på tur i fjellet enten det er med ski, sykkel eller bare gåing!
+                    Dra med seg et telt og en fullstappet sekk med mat og drikke- finnes ikke noe bedre sted å nyte dette,
+                    enn på fjellet! Når jeg ikke er på fjellet, er jeg på festival, jeg elsker å dra på festivaler,
+                    iallefall <em>Roskilde-festival</em>, hvor jeg var ifjord og så McCartney.
+                </p>
+                <p class="mellom">
+                    Jeg brygger også øl på fritiden. Jeg pleier å dra til hytten våres i sunnfjord,
+                    hvor vi har en kjeller som er perfekt til brygging! Dette er en hobby jeg deler med min bror.
+                    Vi reiser opp til sogn. Lager øl og smaker på ølet! Vi får som oftest veldig god øl,
+                    men det hender at det også kan smake pyton :D
+                </p>
             </section>
             <section class="space2 two"></section>
         </div>
