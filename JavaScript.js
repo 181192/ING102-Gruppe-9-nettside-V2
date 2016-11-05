@@ -24,7 +24,7 @@ $(document).ready(function () {
 
     });
     $(window).resize(function () {
-        if ($(window).width() >= "768px") {  /* Mobil visning grense normal 641px, endret til 768px, for å tilpasse nettbrett/ipad bedre */
+        if ($(window).width() >= "768") {  /* Mobil visning grense normal 641px, endret til 768px, for å tilpasse nettbrett/ipad bedre */
             $("header > nav").css("display", "block");
 
             if ($("#logo").attr('class') == "menuDown") {

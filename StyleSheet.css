@@ -21,7 +21,7 @@ body {
     height: auto !important;
     height: 100%;
     min-height: 100%;
-    /* text-rendering: optimizeLegibility; */
+    text-rendering: optimizeLegibility;
     background: url(images/hib.jpg) no-repeat center center fixed; /* Bakgrunnsbilde her */
     -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover; /* Mozilla*/
@@ -247,6 +247,7 @@ section {
 
 .hcenter {
     text-align: center;
+    padding-top:;
 }
 
 .vindu {
@@ -289,6 +290,7 @@ p.center {
 
     .knappdesign:hover {
         opacity: 0.9;
+        -ms-filter: "progid;
     }
 
 /*  ******************************************
@@ -606,9 +608,10 @@ img.perspektivbilde {
     }
 
     .portall {
+        margin: 10%,auto,20%,auto;
         text-align: center;
-      
-        position: static;
+        padding-left: 25%;
+        position: justify;
     }
 
     /*Peder sitt bildet*/
