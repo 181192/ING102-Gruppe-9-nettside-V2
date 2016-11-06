@@ -3,7 +3,7 @@
 <head>
     <title>Gruppe 9</title>
     <link rel="SHORTCUT ICON" href="images/icon.png">
-    <meta charset="utf-8" />    
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <!-- Stylesheet -->
@@ -25,12 +25,12 @@
     <script src="GoogleMaps.js"></script>
 </head>
 <body>
-    <article>
+    <div>
         <!-- Header -->
         <header class="nav-down">
             <div id="logo" class="menuUp">
-               <a href="./"><img class="align-left fixed" src="images/rsz_logo.png" alt="Logo"/></a> 
-               <!-- <h1 id="fix-logo-venstre">#ThatLogo.</h1> -->
+                <a href="./"><img class="align-left fixed" src="images/rsz_logo.png" alt="Logo" /></a>
+                <!-- <h1 id="fix-logo-venstre">#ThatLogo.</h1> -->
                 <!-- Toggle menyen i mobil visning, altså meny knapp toggle -->
                 <div id="navToggle">
                     <a href="#">Menu</a>
@@ -50,7 +50,7 @@
                             </ul>
                         </nav>
                     </li>
-                    <li><a href="#portfolio">Portfolio</a></li>                                     
+                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="prosjekt.html">Prosjekt</a></li>
                     <li><a href="#kontakt">Kontakt</a></li>
                 </ul>
@@ -59,9 +59,9 @@
         <!-- Header slutt -->
 
         <div id="page">
-            <section class="hide frontimage">
+            <div class="hide frontimage">
                 <!-- <img class="front" src="Front.jpg" alt="Front image" /> -->
-            </section>
+            </div>
             <section id="startchange" class="space one">
                 <!-- name atributt hører til anker funksjon, slik at #HOVEDSIDE peker på name="HOVEDSIDE",
                 altså så vil menyen peke på element lenger ned inni samme nettside -->
@@ -69,28 +69,29 @@
                 <p>
                     I ING-faget har fått i oppgave om å lage en internett side! Gruppen vår består av medlemmene: Jacob, Kristoffer og Peder! Planen våres er å lage en brukervennlig internett side, som ikke har alt for mye grafikk og tekst. Vi skal ha en enkel og plane side som ser bra ut!
                 </p>
-               
+
                 <p>
                     Målet våres er at alle skal jobbe min sin egen side. Slik at vi får gode kunnskaper i html/css. Vi møtes en gang i uken på et gruppe rom på Høyskolen. Her deler vi ideer om hvordan vi skal ha siden, og hjelper hverandre med problemer som oppstår på veien. Jacob skriver raport om hvilke ulemper og fordeler ved proskjetarbeidet, og hvilke fremgang vi har! Vi har blitt enige om å ha en lik stil/css over hele internett siden. Slik at det ikke blir flashy-pashy-shit! Vi laget et stylesheet som alle kan linke i html koden.
                 </p>
             </section>
             <section class="space2 two">
                 <a id="portfolio"><h2 id="two" class="space3">Designs</h2></a>
-                 <p>
+                <p>
                     Hei vi er 123pånett. Vi leverer internettside til din restaurant, hos oss kan du velge mellom flere forskjellige typer design. Send oss menyen deres og bilder, så ordner vi resten! Vi gjør dette helt gratis. Les mer i "terms of agreement"
-                    Om oss: vi er et ny oppstartet firma, som selger internettsider til restauranter. Vi holder til på høyskolen i Bergen. Vi er tre menn som studerer data-ingeniør. Vi har som prosjekt å lage internettside, og i forbindelse med prosjektet ønsker vi en restaurant som har lyst å prøve vårt produkt. </p>
+                    Om oss: vi er et ny oppstartet firma, som selger internettsider til restauranter. Vi holder til på høyskolen i Bergen. Vi er tre menn som studerer data-ingeniør. Vi har som prosjekt å lage internettside, og i forbindelse med prosjektet ønsker vi en restaurant som har lyst å prøve vårt produkt.
+                </p>
                 <!-- Dette er modal biten, den har en knapp som åpner en html-side -->
-                <h3 class="portall">Klikk på vinduet for å se demo av siden.</h3>
                 <section id="iframePadding">
+                    <h3 class="portall">Klikk på vinduet for å se demo av siden.</h3>
                     <br />
-                    
+
                     <br />
 
                     <!-- Å bruke knapp overstyrer javascriptet for smooth scrolling, kan ikke bruke vanlig "hyperlink" den funker ikke -->
                     <button class="HoverImg" id="side1" onclick="location.href='#openModal1'"></button>
                     <button class="HoverImg" id="side2" onclick="location.href='#openModal2'"></button>
                     <button class="HoverImg" id="side3" onclick="location.href='#openModal3'"></button>
-                    
+
                     <div id="openModal1" class="modalDialog">
                         <div class="wrapper h_iframe">
                             <a href="#close" title="Close" class="modalclose"></a>
@@ -109,7 +110,7 @@
                         <div class="wrapper h_iframe">
                             <a href="#close" title="Close" class="modalclose"></a>
                             <img class="ratio" alt="Hvit bakgrunn" src="http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg" /> <!-- Link til hvit bakgrunn, må laste ned seinere -->
-                      
+
                             <iframe src="http://home.hib.no/studenter/h181192/restaurantv1/HtmlPage.html" name="targetframe" allowfullscreen></iframe>
                         </div>
                     </div>
@@ -117,10 +118,10 @@
                         <div class="wrapper h_iframe">
                             <a href="#close" title="Close" class="modalclose"></a>
                             <img class="ratio" alt="Hvit bakgrunn" src="http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg" /> <!-- Link til hvit bakgrunn, må laste ned seinere -->
-                        
+
                             <iframe src="http://home.hib.no/studenter/h181192/bedrift/HtmlPage.html" name="targetframe" allowfullscreen></iframe>
                         </div>
-                    </div>                  
+                    </div>
                 </section>
                 <!-- Modal slutt -->
             </section>
@@ -156,6 +157,6 @@
             <p class="rights">copyright 2016 gruppe9.no all rights reserved</p>
         </footer>
         <!-- Footer nr.2 slutt -->
-    </article>
+    </div>
 </body>
 </html>
