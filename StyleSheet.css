@@ -474,7 +474,32 @@ img.perspektivbilde {
 .perspektbildejacob1 {
     width: 100%;
 }
+.bunnlinje {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #444;
+    padding-top: -10px;
+    padding-bottom: -60px;
+    z-index: 100;
 
+}
+
+.main-container {
+  float: left;
+  position: relative;
+  left: 50%;
+  padding-top: 16px;
+
+}
+
+.fixer-container {
+  float: center;
+  position: relative;
+  left: -50%;
+  
+}
 /* Mobil css koder ferdig */
 
 
@@ -696,7 +721,21 @@ img.perspektivbilde {
   left: -50%;
   
 }
+.knappdesign2 {
+    border: 50%;
+    width: 115px;
+    height: 25px;
+    background: #696969;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration:none;
+    
 
+}
 
 }
 /*desktop slutt*/
