@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="no">
 <head>
     <title>Gruppe 9</title>
@@ -75,7 +75,7 @@
                     <br>Denne Portefølje er en mal for restauranten sin internettside.
                 </p>
                 <div style="text-align: left">
-                    <h2>Status til prosjektet</h2>
+                    <h2>Status til prosjektet</h2> <!--Overskift og tekst om hvordan prosjektets fremgang har gått -->
                     <p class="spaceProsjekt">
                         I forhold til prosjektet så har vi kommet godt i gang. Vi har nå et produkt som snart er ferdig, det som mangler er få forbindelse med en kunde. Grunnen til at vi ikke har nådd helt ferdig enda, er at det krevende å selge ett produkt som ikke er ferdig produsert.
 
@@ -90,12 +90,11 @@
                     </p>
                 </div>
 
+        
                 <div style="text-align: center">
-                    <p>
-                        <br><br>Trykk på knappen under for å se den gamle web-siden vår
-                    </p>
-
-                    <button class="HoverImg" id="side4" onclick="location.href='#openModal4'"></button>
+                <!-- iFrame knapp som viser den gamle web-siden våres. Den vi brukte til innlevering WEB2 -->
+                    <p><br><br>Trykk på knappen under for å se den gamle web-siden vår</p>
+                    <button class="HoverImg" id="side4" onclick="location.href='#openModal4'"></button> <!--Her legger vi til hover over knappen -->
                     <div id="openModal4" class="modalDialog">
                         <div class="wrapper h_iframe">
                             <a href="#close" title="Close" class="modalclose"></a>
@@ -104,22 +103,26 @@
                             <iframe src="http://home.hib.no/studenter/h181192/gruppe9/main.html" name="targetframe" allowfullscreen></iframe>
                         </div>
                     </div>
+
+                    <!--Knapper, og tekst til Vilkår, Statusrapport og Prosjektbeskrivelse -->
                     <p class="spaceProsjekt"> Last ned vilkår til bedriften, prosjektbeskrivelse og statusrapport</p>
                     <a href="./docs/Vilkaar.pdf" download class="knappdesign2" target="_blank">Vilkår</a>
                     <a href="./docs/Prosjektbeskrivelse_gruppe9.pdf" download class="knappdesign2" target="_blank">Prosjektbeskrivelse</a>
                     <a href="./docs/Statusrapport1.pdf" download class="knappdesign2" target="_blank">Statusrapport</a>
                     <div class="space">
-                        <div class="senter">
-                            <div><button onclick="loadDoc()">Nøkkel</button></div>
-                            <p id="display">Trykk på knappen over for å laste inn!</p>
+
+                <!--Knapp som laster inn xml dokument tabell -->
+                    <div class="senter">
+                        <div><button onclick="loadDoc()">Nøkkel</button></div>
+                        <p id="display">Trykk på knappen over for å laste inn!</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="space2"></section>
-
+            <section class="space2"></section> <!-- for å lage mellomrom med bakgrunnsbilde -->
         </div>
-        <!--Bunnlinje med nedlastningslinker -->
+
+        <!-- Statisk bunnlinje med nedlastningslinker -->
         <div class="bunnlinje">
             <div class="main-container">
                 <div class="fixer-container">
@@ -130,9 +133,9 @@
             </div>
         </div>
         <!-- Bunnlinje SLUTT -->
+
         <!-- Footer nr.1 for kontakt oss og map -->
         <footer>
-
             <section class="four hide">
 
                 <div class="headline">
@@ -157,6 +160,7 @@
             </section>
         </footer>
         <!-- Footer nr.1 slutt -->
+
         <!-- Footer nr.2 for logo og copyrigth -->
         <footer>
             <p class="bunn">#thatlogo.</p>
