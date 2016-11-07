@@ -86,3 +86,7 @@ function writeData(xml) {
         display.innerHTML = table;
     }
 }
+
+$("load1").click(function () {
+    $("#if").attr('src', 'http://home.hib.no/studenter/h181192/resturant/index.html');
+});
